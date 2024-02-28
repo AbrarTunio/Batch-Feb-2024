@@ -4,19 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      form {
+        width: 250px;
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+      }
+      .form-item {
+        margin: 5px 0px;
+      }
+    </style>
   </head>
   <body>
-    <form action="" method="POST">
+    <form action="congo.html" method="get">
       <div class="form-item">
-        <label for="">User Name: </label>
-        <input name="uname" type="text" placeholder="Enter username" />
+        <input type="text" name="uname" placeholder="Enter UserName" />
       </div>
+
       <div class="form-item">
-        <label for="">Passcode: </label>
-        <input name="pass" type="password" placeholder="Enter Passcode" />
+        <input type="password" name="pass" placeholder="Enter Secret Pass" />
       </div>
+
       <div class="form-item">
-        <input type="submit" value="Login" />
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      </div>
+
+      <div class="form-item">
+        <p>Choose your fav cities</p>
+        <input id="k" type="checkbox" name="karachi" value="karachi" />
+        <label for="k">Karachi</label>
+        <input type="checkbox" name="Hyderabad" value="Hyd" />
+        hyderabad
+        <input type="checkbox" name="Lahore" value="Lhr" />
+        Lahore
+      </div>
+
+      <div class="form-item">
+        <select name="" id="">
+          <option value="" selected>Choose One</option>
+          <optgroup label="Cars">
+            <option value="">Mehran</option>
+            <option value="">Civic</option>
+            <option value="">Dalo</option>
+          </optgroup>
+
+          <optgroup label="Bikes">
+            <option value="">CD</option>
+            <option value="">125</option>
+            <option value="">Yamaha</option>
+          </optgroup>
+        </select>
+
+        <input type="file" />
+        <button type="submit">Submit</button>
       </div>
     </form>
   </body>
