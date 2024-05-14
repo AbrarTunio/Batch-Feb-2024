@@ -20,12 +20,13 @@
   <body>
     <!-- My Navbar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a
-          class="border rounded-circle border-primary navbar-brand"
-          href="index.html"
-        >
-          <img src="https://picsum.photos/50" alt="logo" />
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="rounded-circle"
+            src="https://picsum.photos/50"
+            alt="logo"
+          />
         </a>
 
         <button
@@ -41,10 +42,10 @@
         </button>
 
         <div
-          class="collapse border border-primary justify-content-end navbar-collapse"
+          class="collapse justify-content-end navbar-collapse"
           id="navbarSupportedContent"
         >
-          <ul class="border border-danger navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -79,7 +80,7 @@
       </div>
     </nav>
     <!-- My navbar ends here -->
-    <div class="container-fluid">
+    <div class="container">
       <!-- my carousel starts here -->
       <div class="row border my-5 justify-content-between align-items-center">
         <div class="col-md-3 p-0 col-sm-5 bg-success">
@@ -100,8 +101,8 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-5 bg-danger">
-          <div class="card m-auto" style="width: 18rem">
+        <div class="col-md-3 p-0 col-sm-5 bg-success">
+          <div class="card m-auto">
             <img
               src="https://picsum.photos/300"
               class="card-img-top"
@@ -118,8 +119,8 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-12 bg-warning">
-          <div class="card m-auto" style="width: 18rem">
+        <div class="col-md-3 p-0 col-sm-5 bg-success">
+          <div class="card m-auto">
             <img
               src="https://picsum.photos/300"
               class="card-img-top"
@@ -137,8 +138,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div class="row my-3">
+        <div class="col p-0">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -152,25 +153,19 @@
                 class="active"
                 aria-current="true"
                 aria-label="Slide 1"
-              >
-                One
-              </button>
+              ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
-              >
-                Two
-              </button>
+              ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
-              >
-                <img src="https://picsum.photos/50" alt="" />
-              </button>
+              ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
@@ -238,8 +233,129 @@
         </div>
       </div>
 
+      <div class="row my-3">
+        <!-- two buttons -->
+        <div class="col text-center">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#secondButton"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="secondButton"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    I am button Two
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- My carousel ends here -->
       <!-- My Programs -->
+      <div class="row">
+        <div class="col my-5 text-center">
+          <button class="btn btn-primary" type="button">
+            <span
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            Loading Abrar...
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <span
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            Loading...
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
