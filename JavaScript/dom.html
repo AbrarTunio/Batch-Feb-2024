@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Nothing is writtein at all in this p element</p>
+    <button>Fill Up</button>
+
+    <script>
+      pee = document.querySelector("p");
+      btn = document.querySelector("button");
+
+      btn.addEventListener("click", () => {
+        pee.innerText = "Someting is written";
+        btn.innerText = "Filled";
+        pee.style.backgroundColor = "green";
+      });
+    </script>
+
+    <!-- Create h1 , p and button 
+Write a program so that when user click on buttn text from h1 is copied into p
+and text of h1 is now aligned at center
+and apply orange color to h1 -->
+  </body>
+</html>
